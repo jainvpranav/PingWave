@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/PingWave/static/css/main.dc6744a1.css",
+    "main.js": "/PingWave/static/js/main.fa3e1c7a.js",
+    "static/media/google-symbol.png": "/PingWave/static/media/google-symbol.fa046da15e89a4780c33.png",
+    "index.html": "/PingWave/index.html",
+    "main.dc6744a1.css.map": "/PingWave/static/css/main.dc6744a1.css.map",
+    "main.fa3e1c7a.js.map": "/PingWave/static/js/main.fa3e1c7a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc6744a1.css",
+    "static/js/main.fa3e1c7a.js"
+  ]
+}
