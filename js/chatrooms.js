@@ -132,5 +132,5 @@ const logout = document.getElementById("logout");
 logout.addEventListener("click", () => {
     window.localStorage.clear();
     window.location.reload(true);
-    window.location.replace('../html/index.html');
+    window.location.replace('../index.html');
 });
