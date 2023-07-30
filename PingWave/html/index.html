@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../toast/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <title>PingWave</title>
+</head>
+<body>
+    
+    <div class="header">
+        <h1>PingWave</h1>
+        <div class="headerinner">
+            <h2>Chat, Connect, and Create Memories! <i class="fa-solid fa-comments"></i> <i class="fa-regular fa-handshake"></i> </h2>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="notifications"></ul>
+        <div class="message">
+            Hey there, magical folks! <i class="fa-solid fa-star-of-life"></i>
+            Are you ready to embark on an extraordinary journey filled with laughter <i class="fa-solid fa-face-smile-wink"></i> , secrets <i class="fa-solid fa-unlock-keyhole"></i> , and epic chats<i class="fa-brands fa-rocketchat"></i>? Look no further, because PingWave is here to make your wildest chatroom dreams come true! <i class="fa-solid fa-champagne-glasses"></i>
+        </div>
+        <div class="loginsignup">
+            <form id="loginform" autocomplete="off"  >
+            <h3>Login</h3>
+            <label for="username">Username</label>
+            <input type="text" placeholder="Email" id="luser">
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="lpass">
+            <button id="login">Log In</button>
+            </form>
+            <form id="signupform" autocomplete="off">
+            <h3>Signup</h3>
+            <label for="username">Username</label>
+            <input type="text" placeholder="Email" id="suser">
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="spass">
+            <button id="signup" >Sign up </button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+<script src="https://kit.fontawesome.com/59edc03056.js" crossorigin="anonymous"></script>
+<script type="module" src="../js/login.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+</html>
