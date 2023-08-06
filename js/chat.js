@@ -9,6 +9,18 @@ username.innerHTML = localStorage.getItem("usernamechatroom");
 const roomname = document.getElementById("roomname");
 roomname.innerHTML = localStorage.getItem("roomname");
 
+async function description() {
+    const { data, error } = await supabase
+    .from('chatroom')
+    .select()
+    .eq('name', localStorage.getItem("roomname"))
+    
+    const description = document.getElementById("description");
+    description.innerHTML = data[0]['description'];
+    
+}
+description();
+
 const create = document.getElementById("create");
 const newuserinput = document.getElementById("newuserinput");
 create.addEventListener("click", (e)=> {
@@ -152,10 +164,7 @@ async function getallmessages() {
         createToast("error", "getmessages error");
         return;
     }
-    console.log(data.length)
-    console.log(data)
     for (let i = data.length-1; i >=0; i--) {
-        console.log(data[i]);
         messages(data[i]['content'], data[i]['user_id'], data[i]['created_at'], data[i]['message_id']);
     }
 }
