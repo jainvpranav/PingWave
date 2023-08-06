@@ -1,0 +1,190 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@300&display=swap');
+
+
+body {
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+    background-color: #6B4F4F;  
+    /* #6B4F4F brown-shade */ /* #7fbfff barbie  */
+}
+
+body::-webkit-scrollbar {
+    width: 1px;
+  }
+
+/* /////////////////////////////header///////////////////////////// */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 3px solid black;
+    border-radius: 30px;
+    background-color:#FFF3E4;
+    /* FFF3E4 brown-shade  #FF6B6B barbie */
+    /* color: white; */
+    font-family: 'Poiret One', sans-serif;
+}
+
+.headerinner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+/* /////////////////////////////container///////////////////////////// */
+.container {
+    background-color: #EED6C4;
+    /* #EED6C4 brown-shade #ffb7b7 barbie */
+    font-family: 'Poppins', sans-serif;
+    margin: 30px auto;
+    max-width: 1080px;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid black;
+}
+
+
+
+.messages::-webkit-scrollbar {
+    width: 10px;
+  }
+
+.logout {
+    background: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.in {
+    padding-left: 30px;
+    grid-area: bottom;
+    width: 100%;
+    /* border: 2px solid black; */
+    border: none;
+}
+
+input[type=text] {
+    width: 30%;
+    padding: 12px 20px;
+    border-radius: 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF3E4;
+}
+
+/*////////////////////Messages/////////////////////////////////////////*/
+.chatrooms  {
+    list-style-type: none;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+.chatrooms li {
+    background-color: #6B4F4F;
+    color: white;
+    min-width: 30px;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.2);
+    border: 1px solid black;
+}
+
+.line  {
+    height: auto!important ;
+    width: auto;
+    border: 3px solid black;
+}
+
+.greenbtn {
+    width: 30%;
+    padding: 12px 20px;
+    border-radius: 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #8aff60;
+}
+
+.newroom {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+
+/* /////////////////////////////Media Query for 850px///////////////////////////// */
+@media screen and (max-width: 850px){
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .header {
+        padding-left: 5px;
+        padding-right: 5px;
+        /* border: 1px solid black; */
+    }
+    input[type=text] {
+        width: 50%;
+        padding: 12px 20px;
+        border-radius: 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+      }
+}
+
+/* /////////////////////////////Media Query for 500px///////////////////////////// */
+
+@media screen and (max-width: 500px){
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .header {
+        padding-left: 10px;
+        padding-right: 10px;
+        /* border: 1px solid black; */
+    }
+    .headerinner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+    }
+    input[type=text] {
+        width: 80%;
+        padding: 12px 20px;
+        border-radius: 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+    .newroom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .greenbtn {
+        width: 80%;
+    }
+}
