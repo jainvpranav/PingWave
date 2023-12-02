@@ -1,0 +1,187 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@300&display=swap');
+
+
+body {
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+    background-color: #6B4F4F;  
+    overflow: scroll;
+    /* #6B4F4F brown-shade */ /* #7fbfff barbie  */
+}
+
+body::-webkit-scrollbar {
+    width: 1px;
+}
+/* /////////////////////////////header///////////////////////////// */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 3px solid black;
+    border-radius: 30px;
+    background-color:#FFF3E4;
+    /* FFF3E4 brown-shade  #FF6B6B barbie */
+    /* color: white; */
+    font-family: 'Poiret One', sans-serif;
+}
+
+.headerinner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+/* /////////////////////////////container///////////////////////////// */
+.container {
+    background-color: #EED6C4;
+    /* #EED6C4 brown-shade #ffb7b7 barbie */
+    font-family: 'Poppins', sans-serif;
+    margin: 30px auto;
+    max-width: 1080px;
+    border-radius: 30px;
+    padding: 20px;
+    display: grid;
+    grid-template-areas:
+    'header header header header header '
+    'menu menu main main main '
+    'menu menu main main main '
+    'bottom bottom bottom bottom bottom ';
+    gap: 10px;
+    border: 2px solid black;
+}
+/* /////////////////////////////Message///////////////////////////// */
+.message {
+    grid-area: menu;
+    max-width: 350px;
+    text-align: justify;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+
+
+.message::first-letter {
+    font-size: 30px;
+}
+
+.ping {
+    -webkit-user-drag: none;
+    width: 250px;
+    height: 250px;
+}
+
+.loginsignup {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    grid-area: main;
+    min-height: 50vh;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+    background-color: #6B4F4F;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.buttons {
+    background-color: #FFF3E4;
+    display: flex;
+    flex-direction: row;
+}
+
+
+button {
+    padding: 10px 130px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF3E4;
+    border: none;
+} 
+
+#loginform {
+    opacity: 0.2;
+}
+
+#loginform:hover {
+    opacity: 1;
+}
+
+#signupform {
+    opacity: 0.2;
+}
+
+#signupform:hover {
+    opacity: 1;
+    
+}
+
+
+/* /////////////////////////////Media Query for 850px///////////////////////////// */
+@media screen and (max-width: 1080px){
+    .container {
+        display: grid;
+        grid-template-areas:
+        'header header header header header '
+        'main main main main main '
+        'main main main main main '
+        'bottom bottom bottom bottom bottom ';
+    }
+    .header {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .message {
+        grid-area: header;
+    }
+    .loginsignup {
+        display: flex;
+        /* flex-direction: column; */
+    }
+}
+
+/* /////////////////////////////Media Query for 500px///////////////////////////// */
+
+@media screen and (max-width: 875px){
+    
+    .container {
+        display: grid;
+        grid-template-areas:
+    'header header header header header header'
+    'main main main main main main'
+    'bottom bottom bottom bottom bottom bottom';
+    align-items: center;
+    justify-content: center;
+    }
+    .message {
+        grid-area: header;
+        
+    }
+    .header {
+        padding-left: 5px;
+        padding-right: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .loginsignup {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 270px;
+        padding: 30px;
+    }
+}

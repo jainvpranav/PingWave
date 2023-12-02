@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/chat.css">
+    <link rel="stylesheet" href="../toast/style.css">
+    <!-- <meta http-equiv="refresh" content="5"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/vulcan_salute/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/vulcan_salute/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/vulcan_salute/favicon-16x16.png">
+    <link rel="manifest" href="../assets/vulcan_salute/site.webmanifest">
+    <title>PingWave</title>
+</head>
+<body>
+    <div class="header">
+        <h1 class="ping">PingWave</h1>
+        <div class="headerinner">
+            <ul class="user">
+                <li id="username"></li>
+            </ul>
+            <button class="logout" id="logout" style="font-family: 'Poiret One'; font-weight: 800; font-size: larger;">Chatrooms</button>
+        </div>
+    </div>
+    <ul class="notifications"></ul>
+    <div class="container">
+        <div class="messages" id="messages">
+            <ol class="message_list" id="message_list"></ol>
+        </div>
+        <div class="in">
+            <input type="text" placeholder="Type in here" name="message" id="messagetext"><span></span></input>
+            <button id="sendbtn">
+                <i class="fa-solid fa-paper-plane fa-2xl"></i>
+            </button>
+        </div>
+        
+        <div class="members" >
+            <h1 id="roomname" style="font-family: 'Poiret One' ,sans-serif;"></h1>
+            <h2 id="description" style="font-family: 'Poiret One' ,sans-serif;"></h2>
+            <input type="text" placeholder="enter @username" class="newuserinput" id="newuserinput">
+            <button class="greenbtn" id="create">Add a Member?</button>
+                <ul class="member_list" id="member_list"></ul>
+        </div>
+    </div>
+    
+</body>
+<script src="https://kit.fontawesome.com/59edc03056.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="../js/chat.js" type="module"></script>  
+</html>
